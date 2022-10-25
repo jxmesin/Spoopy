@@ -10,6 +10,28 @@
 
 </head>
 <body>
+    <!-- Made the checkboxes into radio inputs. -->
+    <query-checkboxes>
+        <label for="Age">Age</label>
+            <p>
+                <input type="radio" name="Age" value="Kid" checked>Kid<br>
+                <input type="radio" name="Age" value="Teen" checked>Teen<br>
+                <input type="radio" name="Age" value="Adult" checked>Adult<br>
+            </p>
+        <label for="Gender">Gender</label>
+            <p>
+                <input type="radio" name="Gender" value="Boy" checked>Boy<br>
+                <input type="radio" name="Gender" value="Girl" checked>Girl<br>
+                <input type="radio" name="Gender" value="Nonbinary" checked>Nonbinary<br>
+            </p>
+    </query-checkboxes>
+
+    <!-- location-input with a text field. -->
+    <form>
+        <label for="location">Location (City)</label><br>
+        <input type="text" id="location" name="location" value="ur mums haus"><br>
+        <input type="submit" value="Submit">
+    </form>
     
 </body>
 </html>
