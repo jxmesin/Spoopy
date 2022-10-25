@@ -23,3 +23,36 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+/*idea on how to make to save the api output
+ 
+var file = window.URL.createObjectURL(result);
+var a = document.createElement("a");
+a.href = file;
+a.download = "Name of PDF";
+document.body.appendChild(a);
+a.click();
+ 
+*/
+ 
+var repoList = document.querySelector('ul');
+var fetchButton = document.getElementById('fetch-button');
+ 
+function getApi() {
+  
+  var requestUrl = 'https://generatorfun.com/halloween-costume-generator';
+ 
+  fetch(requestUrl)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      for (var i = 0; i < data.length; i++) {
+        var listItem = document.createElement('li');
+        listItem.textContent = data[i].html_url;
+        repoList.appendChild(listItem);
+      }
+    });
+}
+ 
+fetchButton.addEventListener('click', getApi);
