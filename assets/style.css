@@ -16,9 +16,12 @@
   .modal-content {
     background-color: #fefefe;
     margin: 15% auto; /* 15% from the top and centered */
+    /* Added margin-top. - Magerick */
+    margin-top: 50px;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    /* Changed width to 33% - Magerick */
+    width: 33%; /* Could be more or less, depending on screen size */
   }
   
   /* The Close Button */
