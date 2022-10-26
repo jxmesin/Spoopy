@@ -98,6 +98,30 @@ const getData2 = function() {
       result2.innerText = response
     }) 
     .catch(err => console.error(err));
+    
+}
+
+
+const getData3 = function() {
+  result.innerText = 'Loading....'
+  const options = {
+    method: 'GET',
+    headers: {
+      origin: 'example.com',
+      'x-requested-with': 'example.com',
+      'X-RapidAPI-Key': '7a045ebe84mshf1fbfc93a63591fp1b38b4jsnf62ad6f91c8e',
+      'X-RapidAPI-Host': 'http-cors-proxy.p.rapidapi.com'
+    }
+  };
+  
+  fetch('https://http-cors-proxy.p.rapidapi.com/https://generatorfun.com/consumeapi.php?api=16&apisecret=9643d9-9ccd5e-367577-5c01ee-af4a3c', options)
+    .then(response => response.json())
+    .then(response => {
+      console.log(response)
+      result3.innerText = response
+    }) 
+    .catch(err => console.error(err));
+    
 }
 
 
