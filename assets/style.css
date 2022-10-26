@@ -1,3 +1,10 @@
+body {
+  background-color:rgba(255, 209, 164);
+}
+
+
+
+
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
@@ -35,3 +42,6 @@
     text-decoration: none;
     cursor: pointer;
   }
+
+
+  
