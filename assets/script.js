@@ -102,7 +102,7 @@ const getData2 = function() {
 
 
 
-// add event listener for #fetchdata button
+// add event listener for #fetch data button
 fetchDataBtn.addEventListener('click', getData2)
 
  
