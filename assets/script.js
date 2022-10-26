@@ -56,25 +56,3 @@ function getApi() {
 }
  
 fetchButton.addEventListener('click', getApi);
-
-// Trying to dynamically show a gif with text of Mr. Skelly Bones. - Magerick
-modal-button.addEventListener("click", function() {
-  let bones = document.createElement("p");
-  let gif = document.createElement("img");
-  let modal = document.getElementById("modal-content");
-
-  bones.textContent = "Mr. Skelly Bones";
-  bones.setAttribute("style", "margin:auto; width:50%; text-align:center;");
-
-  bones.id = "bones";
-  gif.id = "gif";
-
-  gif.className = "class";
-  gif.src = "./assets/images/mrskellybones.gif";
-  // Image source: kiszkiloszki.tumblr.com and 
-  https://www.fanpop.com/clubs/thecountess/images/39972439/title/hippity-hop-skeleton-animated-gif-fanart
-  gif.setAttribute("alt", "A skeleton bouncing on a barrel lmao.")
-
-  modal.appendChild(bones);
-  modal.appendChild(gif);
-});
