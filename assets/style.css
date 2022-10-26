@@ -116,9 +116,10 @@ Added padding. - Magerick */
     border: 1px solid #888;
     /* Changed width to 33% - Magerick */
     width: 33%; /* Could be more or less, depending on screen size */
-    /* Added some font style to Mr. Skelly Bones. - Magerick */
+    /* Added some font style to Mr. Skelly Bones.
+    Downsized the font. - Magerick */
     font-family: papyrus;
-    font-size: 100px;
+    font-size: 30px;
     font-style: oblique;
     font-weight: bolder;
   }
