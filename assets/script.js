@@ -49,3 +49,5 @@ function getApi() {
 }
  
 fetchButton.addEventListener('click', getApi);
+
+// Local Storage here I guess??? - Magerick
