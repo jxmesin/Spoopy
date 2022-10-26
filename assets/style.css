@@ -3,10 +3,13 @@
   --blue: #0028a0;
   --chrome: #4060a0;
   --dark: #101520;
+  --cype: #ffd1a4;
+  --cypeD: #c08040;
 }
 
 body {
-  background-color:rgba(255, 209, 164);
+  background-color: var(--cypeD);
+  /* background-color:rgba(255, 209, 164); */
   text-align: center;
 }
 
@@ -64,17 +67,23 @@ h1 {
   font-family: 'Creepster', cursive;
 }
 
-
-
 /* Modal Button - Magerick */
 .modal-button {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: center;  
+/* Added button style and margin-bottom. - Magerick */
   margin-inline: auto;
-  width: 100px;
+  margin-bottom: 10px;
+  width: 200px;
   height: 50px;
+  border-radius: 5px;
+  border: 5px solid var(--chrome);
+  background-color: var(--dark);
+  color: var(--chrome);
+  font-size: 20px;
+  font-family: papyrus;
 }
 
 /* Fetch Data Button. Adding some style. 
@@ -90,7 +99,6 @@ Added padding. - Magerick */
   font-family: papyrus;
   padding: 10px;
 }
-
 
 /* The Modal (background) */
 .modal {
@@ -111,8 +119,8 @@ Added padding. - Magerick */
     background-color: #fefefe;
     margin: 15% auto; /* 15% from the top and centered */
     /* Added margin-top. Changed it to 60px. - Magerick */
-    margin-top: 60px;
-    padding: 20px;
+    margin-top: 8px;
+    padding: 10px;
     border: 1px solid #888;
     /* Changed width to 33% - Magerick */
     width: 33%; /* Could be more or less, depending on screen size */
@@ -122,6 +130,11 @@ Added padding. - Magerick */
     font-size: 30px;
     font-style: oblique;
     font-weight: bolder;
+  }
+
+/* Reduced the font size. - Magerick */
+  .description {
+    font-size: 15px;
   }
   
   /* The Close Button */
@@ -138,8 +151,6 @@ Added padding. - Magerick */
     text-decoration: none;
     cursor: pointer;
   }
-
-
 
 .result {
   display: flex;
@@ -159,5 +170,4 @@ Added padding. - Magerick */
   padding: 10px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 4rem;
-}
-  
+} 
