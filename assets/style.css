@@ -49,12 +49,16 @@ h1:not(:hover) {
   100% {transform: rotate(0deg);}
 }
 
-/* h1 - Magerick */
+/* h1 
+Added margin-top/bottom to remove the empty 
+space in the center of the screen. - Magerick */
 h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-inline: auto; 
+  margin-top: -20px;
+  margin-bottom: -10px; 
   font-size: 250px;
   animation: wiggle 2.5s infinite;
   font-family: 'Creepster', cursive;
@@ -73,7 +77,8 @@ h1 {
   height: 50px;
 }
 
-/* Fetch Data Button. Adding some style. - Magerick */
+/* Fetch Data Button. Adding some style. 
+Added padding. - Magerick */
 .fetchdatabutton {
   border-radius: 5px;
   border: 5px solid var(--chrome);
@@ -83,6 +88,7 @@ h1 {
   font-style: oblique;
   font-weight: bolder;
   font-family: papyrus;
+  padding: 10px;
 }
 
 
@@ -110,6 +116,11 @@ h1 {
     border: 1px solid #888;
     /* Changed width to 33% - Magerick */
     width: 33%; /* Could be more or less, depending on screen size */
+    /* Added some font style to Mr. Skelly Bones. - Magerick */
+    font-family: papyrus;
+    font-size: 100px;
+    font-style: oblique;
+    font-weight: bolder;
   }
   
   /* The Close Button */
