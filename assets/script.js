@@ -56,3 +56,23 @@ function getApi() {
 }
  
 fetchButton.addEventListener('click', getApi);
+
+// Trying to dynamically show a gif with text of Mr. Skelly Bones. - Magerick
+modal-button.addEventListener("click", function() {
+  let bones = document.createElement("p");
+  let gif = document.createElement("img");
+  let modal = document.getElementById("modal");
+
+  bones.textContent = "Mr. Skelly Bones";
+  bones.setAttribute("style", "margin:auto; width:50%; text-align:center;");
+
+  bones.id = "bones";
+  gif.id = "gif";
+
+  gif.className = "class";
+  gif.src = "./assets/images/mrskellybones.gif";
+  gif.setAttribute("alt", "A skeleton bouncing on a barrel lmao.")
+
+  modal.appendChild(bones);
+  modal.appendChild(gif);
+});
