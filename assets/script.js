@@ -65,7 +65,10 @@ const getData = function() {
   
   fetch('https://http-cors-proxy.p.rapidapi.com/https://generatorfun.com/consumeapi.php?api=39&apisecret=978c05-79094e-b07c06-d75f84-57ad6e', options)
     .then(response => response.json())
-    .then(response => console.log(response))
+    .then(response => {
+      console.log(response)
+      result.innerText = response
+    }) 
     .catch(err => console.error(err));
 }
 
@@ -90,7 +93,10 @@ const getData2 = function() {
   
   fetch('https://http-cors-proxy.p.rapidapi.com/https://generatorfun.com/consumeapi.php?api=2325&apisecret=944d63-8986a4-ed361f-a7c6a4-bf1f03', options)
     .then(response => response.json())
-    .then(response => console.log(response))
+    .then(response => {
+      console.log(response)
+      result2.innerText = response
+    }) 
     .catch(err => console.error(err));
 }
 
