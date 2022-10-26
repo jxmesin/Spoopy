@@ -1,3 +1,19 @@
+/* h1 - Magerick */
+h1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-inline: auto; 
+}
+
+/* Modal Button - Magerick */
+.modal-button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-inline: auto;
+}
+
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
@@ -16,9 +32,12 @@
   .modal-content {
     background-color: #fefefe;
     margin: 15% auto; /* 15% from the top and centered */
+    /* Added margin-top. Changed it to 60px. - Magerick */
+    margin-top: 60px;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    /* Changed width to 33% - Magerick */
+    width: 33%; /* Could be more or less, depending on screen size */
   }
   
   /* The Close Button */
