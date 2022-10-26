@@ -34,25 +34,46 @@ document.body.appendChild(a);
 a.click();
  
 */
- 
+const options = {
+	method: 'GET',
+	headers: {
+		origin: 'example.com',
+		'x-requested-with': 'example.com',
+		'X-RapidAPI-Key': '7a045ebe84mshf1fbfc93a63591fp1b38b4jsnf62ad6f91c8e',
+		'X-RapidAPI-Host': 'http-cors-proxy.p.rapidapi.com'
+	}
+};
+
+fetch('https://http-cors-proxy.p.rapidapi.com/https://jsonplaceholder.typicode.com/posts/1', options)
+	.then(response => response.json())
+	.then(response => console.log(response))
+	.catch(err => console.error(err));
+
+const firstUrl = "http-cors-proxy.p.rapidapi.com/"
 var repoList = document.querySelector('ul');
 var fetchButton = document.getElementById('fetch-button');
- 
-function getApi() {
+var requestUrl = 'https://generatorfun.com/consumeapi.php?api=39&apisecret=978c05-79094e-b07c06-d75f84-57ad6e'
+const fetchDataBtn = document.querySelector('#fetchdata')
+const result = document.querySelector('#result')
+
+// gets data from API and sets the content of #result div
+const getData = function() {
+  result.innerText = 'Loading....'
+  const options = {
+    method: 'GET',
+    headers: {
+      origin: 'example.com',
+      'x-requested-with': 'example.com',
+      'X-RapidAPI-Key': '7a045ebe84mshf1fbfc93a63591fp1b38b4jsnf62ad6f91c8e',
+      'X-RapidAPI-Host': 'http-cors-proxy.p.rapidapi.com'
+    }
+  };
   
-  var requestUrl = 'https://generatorfun.com/halloween-costume-generator';
- 
-  fetch(requestUrl)
-    .then(function (response) {
-      return response.json();
-    })
-    .then(function (data) {
-      for (var i = 0; i < data.length; i++) {
-        var listItem = document.createElement('li');
-        listItem.textContent = data[i].html_url;
-        repoList.appendChild(listItem);
-      }
-    });
+  fetch('https://http-cors-proxy.p.rapidapi.com/https://generatorfun.com/consumeapi.php?api=39&apisecret=978c05-79094e-b07c06-d75f84-57ad6e', options)
+    .then(response => response.json())
+    .then(response => console.log(response))
+    .catch(err => console.error(err));
 }
- 
-fetchButton.addEventListener('click', getApi);
+
+// add event listener for #fetchdata button
+fetchDataBtn.addEventListener('click', getData)
