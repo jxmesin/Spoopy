@@ -101,6 +101,8 @@ const getData2 = function() {
     
 }
 
+fetchDataBtn.addEventListener('click', getData2)
+
 
 const getData3 = function() {
   result.innerText = 'Loading....'
@@ -127,7 +129,7 @@ const getData3 = function() {
 
 
 // add event listener for #fetch data button
-fetchDataBtn.addEventListener('click', getData2)
+fetchDataBtn.addEventListener('click', getData3)
 
  
 
