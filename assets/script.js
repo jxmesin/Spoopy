@@ -47,9 +47,9 @@ var repoList = document.querySelector('ul');
 var fetchButton = document.getElementById('fetch-button');
 var requestUrl = 'https://generatorfun.com/consumeapi.php?api=39&apisecret=978c05-79094e-b07c06-d75f84-57ad6e'
 var requestUrltwo = 'https://generatorfun.com/consumeapi.php?api=2325&apisecret=944d63-8986a4-ed361f-a7c6a4-bf1f03'
-var requestUrlThree = 'https://generatorfun.com/consumeapi.php?api=16&apisecret=9643d9-9ccd5e-367577-5c01ee-af4a3c'
 const fetchDataBtn = document.querySelector('#fetchdata')
-const resuzlt = document.querySelector('#result')
+const result = document.querySelector('#result')
+
 
 // gets data from API and sets the content of #result div
 const getData = function() {
@@ -66,7 +66,10 @@ const getData = function() {
   
   fetch('https://http-cors-proxy.p.rapidapi.com/https://generatorfun.com/consumeapi.php?api=39&apisecret=978c05-79094e-b07c06-d75f84-57ad6e', options)
     .then(response => response.json())
-    .then(response => console.log(response))
+    .then(response => {
+      console.log(response)
+      result.innerText = response
+    }) 
     .catch(err => console.error(err));
 }
 
@@ -91,17 +94,56 @@ const getData2 = function() {
   
   fetch('https://http-cors-proxy.p.rapidapi.com/https://generatorfun.com/consumeapi.php?api=2325&apisecret=944d63-8986a4-ed361f-a7c6a4-bf1f03', options)
     .then(response => response.json())
-    .then(response => console.log(response))
+    .then(response => {
+      console.log(response)
+      result2.innerText = response
+    }) 
     .catch(err => console.error(err));
+    
+}
+
+fetchDataBtn.addEventListener('click', getData2)
+
+
+const getData3 = function() {
+  result.innerText = 'Loading....'
+  const options = {
+    method: 'GET',
+    headers: {
+      origin: 'example.com',
+      'x-requested-with': 'example.com',
+      'X-RapidAPI-Key': '7a045ebe84mshf1fbfc93a63591fp1b38b4jsnf62ad6f91c8e',
+      'X-RapidAPI-Host': 'http-cors-proxy.p.rapidapi.com'
+    }
+  };
+  
+  fetch('https://http-cors-proxy.p.rapidapi.com/https://generatorfun.com/consumeapi.php?api=39&apisecret=978c05-79094e-b07c06-d75f84-57ad6e', options)
+    .then(response => response.json())
+    .then(response => {
+      console.log(response)
+      result3.innerText = response
+    }) 
+    .catch(err => console.error(err));
+    
+    
 }
 
 
 
-
-// add event listener for #fetchdata button
-fetchDataBtn.addEventListener('click', getData2)
-
- 
-sessionStorage.setItem("mySessionStore", JSON.stringify(result));
-const mySessionData = JSON.parse(sessionStorage.getItem("mySessionStore"));
-console.log(mySessionData);
+// add event listener for #fetch data button
+const localStorage1 = function(){
+const options = {
+  method: 'GET',
+  headers: {
+    origin: 'example.com',
+    'x-requested-with': 'example.com',
+    'X-RapidAPI-Key': '7a045ebe84mshf1fbfc93a63591fp1b38b4jsnf62ad6f91c8e',
+    'X-RapidAPI-Host': 'http-cors-proxy.p.rapidapi.com'
+  }
+};
+fetch('https://http-cors-proxy.p.rapidapi.com/https://generatorfun.com/consumeapi.php?api=39&apisecret=978c05-79094e-b07c06-d75f84-57ad6e' + result.innerText)
+        .then( response => response.json() )
+        .then( json => {
+            localStorage.setItem('myResponse', JSON.stringify(json));
+        })
+      };
