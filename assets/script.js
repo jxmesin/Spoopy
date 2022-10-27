@@ -138,7 +138,7 @@ fetchDataBtn.addEventListener('click', getData3)
 
 
 // add event listener for #fetch data button
-fetchDataBtn.addEventListener('click', getData3)
+
 
 
 
