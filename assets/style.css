@@ -1,13 +1,15 @@
 /* Added color variables. - Magerick */
 :root {
-  --blue: #0028a0;
   --chrome: #4060a0;
   --dark: #101520;
-  --cypeL: #ffd1a4;
+  --red: #c04040;
+  --redD: #a01010;
   --cype: #c08040;
   --cypeD: #a02010;
-  --green: #40C080;
-  --greenD: #10a020;
+  --zure: #4080c0;
+  --zureD: #1020a0;
+  --blue: #4040a0;
+  --blueD: #1010a0;
   --black: #000;
   --darkred: #580000;
   --darkgrey: #3A3A3A;
@@ -23,31 +25,61 @@ body {
 @keyframes pulsate {
   100% {
     text-shadow:
-    0 0 4px var(--cypeD),
-    0 0 11px var(--cypeD),
-    0 0 19px var(--cypeD),
-    0 0 40px var(--darkred),
-    0 0 80px var(--darkred),
-    0 0 90px var(--darkred),
-    0 0 100px var(--darkred),
-    0 0 150px var(--darkred);
+    0 0 4px var(--cype),
+    0 0 11px var(--cype),
+    0 0 19px var(--cype),
+    0 0 40px var(--redD),
+    0 0 80px var(--redD),
+    0 0 90px var(--redD),
+    0 0 100px var(--redD),
+    0 0 150px var(--redD);
   }
   0% {
    text-shadow:
     0 0 2px var(--cypeD),
     0 0 4px var(--cypeD),
     0 0 6px var(--cypeD),
-    0 0 10px var(--darkred),
-    0 0 45px var(--darkred),
-    0 0 55px var(--darkred),
-    0 0 70px var(--darkred),
-    0 0 80px var(--darkred);
+    0 0 10px var(--redD),
+    0 0 45px var(--redD),
+    0 0 55px var(--redD),
+    0 0 70px var(--redD),
+    0 0 80px var(--redD);
  }
 }
 
 .header {
-  animation: pulsate 2.0s infinite alternate;  
+  animation: pulsate 2.0s infinite alternate;
 }
+
+/* Added button effects for header. - Magerick */
+/* .header:active {
+  transform: scale(1, 1);
+  transition: transform 0.2s color 0.2s;
+  @keyframes pulsate {
+    100% {
+      text-shadow:
+      0 0 4px var(--zure),
+      0 0 11px var(--zure),
+      0 0 19px var(--zure),
+      0 0 40px var(--blueD),
+      0 0 80px var(--blueD),
+      0 0 90px var(--blueD),
+      0 0 100px var(--blueD),
+      0 0 150px var(--blueD);
+    }
+    0% {
+    text-shadow:
+      0 0 2px var(--cypeD),
+      0 0 4px var(--cypeD),
+      0 0 6px var(--cypeD),
+      0 0 10px var(--blueD),
+      0 0 45px var(--blueD),
+      0 0 55px var(--blueD),
+      0 0 70px var(--blueD),
+      0 0 80px var(--blueD);
+    }
+  }
+} */
 
 /* h1 
 Added margin-top/bottom to remove the empty 
@@ -60,7 +92,7 @@ h1 {
   margin-inline: auto; 
   margin-top: 30px;
   margin-bottom: 40px; 
-  color: var(--darkred);
+  color: var(--redD);
   font-size: 250px;
   letter-spacing: 20px;
   font-family: 'Creepster', cursive;
@@ -95,7 +127,7 @@ Deleted margin-bottom/tweaked margin-top. - Magerick */
 .modal-button:hover {
   color: var(--cypeD);
   background-color: var(--dark);
-  box-shadow:0 5px var(--darkred);
+  box-shadow:0 5px var(--redD);
   transform: translateY(5px);
 }
 
@@ -124,7 +156,7 @@ Added padding. - Magerick */
 .fetchdatabutton:hover {
   color: var(--cypeD);
   background-color: var(--dark);
-  box-shadow:0 5px var(--darkred);
+  box-shadow:0 5px var(--redD);
   transform: translateY(5px);
 }
 
@@ -162,7 +194,7 @@ Added padding. - Magerick */
     background-color: var(--dark);
     border-radius: 10px;
     color: var(--chrome);
-    text-shadow: 1px 1px var(--blue);
+    text-shadow: 1px 1px var(--blueD);
   }
 
 /* Reduced the font size. - Magerick */
