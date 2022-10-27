@@ -3,13 +3,16 @@
   --blue: #0028a0;
   --chrome: #4060a0;
   --dark: #101520;
-  --cype: #ffd1a4;
-  --cypeD: #c08040;
+  --cypeL: #ffd1a4;
+  --cype: #c08040;
+  --cypeD: #a02010;
   --green: #40C080;
+  --greenD: #10a020;
+
 }
 
 body {
-  background-color: var(--cypeD);
+  background-color: var(--cype);
   /* background-color:rgba(255, 209, 164); */
   text-align: center;
 }
@@ -76,7 +79,7 @@ h1 {
   align-items: center;  
 /* Added button style and margin-bottom. - Magerick */
   margin-inline: auto;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   width: 200px;
   height: 50px;
   border-radius: 10px;
@@ -85,6 +88,19 @@ h1 {
   color: var(--green);
   font-size: 20px;
   font-family: papyrus;
+  /* Added a transition duration for the hover. 
+  Added a box-shadow and cursor pointer. - Magerick */
+  transition-duration: 0.5s;
+  box-shadow: 0 10px var(--green);
+  cursor: pointer;
+}
+
+/* Added some hover animation. - Magerick */
+.modal-button:hover {
+  color: var(--cype);
+  background-color: var(--dark);
+  box-shadow:0 5px var(--cypeD);
+  transform: translateY(5px);
 }
 
 /* Fetch Data Button. Adding some style. 
@@ -93,12 +109,27 @@ Added padding. - Magerick */
   border-radius: 10px;
   border: 5px solid var(--dark);
   background-color: var(--dark);
-  color: var(--cypeD);
+  color: var(--cype);
   font-size: 30px;
   font-style: oblique;
   font-weight: bolder;
   font-family: papyrus;
   padding: 10px;
+  /* Added a transition duration for the hover. 
+  Added a box-shadow and cursor pointer. 
+  Added margin-bottom - Magerick */
+  transition-duration: 0.5s;
+  box-shadow: 0 10px var(--cypeD);
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+/* Added some hover animation. - Magerick */
+.fetchdatabutton:hover {
+  color: var(--green);
+  background-color: var(--dark);
+  box-shadow:0 5px var(--greenD);
+  transform: translateY(5px);
 }
 
 /* The Modal (background) */
