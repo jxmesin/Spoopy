@@ -76,21 +76,21 @@ h1 {
   border-radius: 5px;
   border: 5px solid var(--dark);
   background-color: var(--dark);
-  color: var(--green);
+  color: var(--cype);
   font-size: 20px;
   font-family: papyrus;
   /* Added a transition duration for the hover. 
   Added a box-shadow and cursor pointer. - Magerick */
   transition-duration: 0.5s;
-  box-shadow: 0 10px var(--green);
+  box-shadow: 0 8px var(--cypeD);
   cursor: pointer;
 }
 
 /* Added some hover animation. - Magerick */
 .modal-button:hover {
-  color: var(--cype);
+  color: var(--cypeD);
   background-color: var(--dark);
-  box-shadow:0 5px var(--cypeD);
+  box-shadow:0 5px var(--darkred);
   transform: translateY(5px);
 }
 
@@ -110,16 +110,16 @@ Added padding. - Magerick */
   Added a box-shadow and cursor pointer. 
   Added margin-bottom - Magerick */
   transition-duration: 0.5s;
-  box-shadow: 0 10px var(--cypeD);
+  box-shadow: 0 8px var(--cypeD);
   cursor: pointer;
   margin-bottom: 20px;
 }
 
 /* Added some hover animation. - Magerick */
 .fetchdatabutton:hover {
-  color: var(--green);
+  color: var(--cypeD);
   background-color: var(--dark);
-  box-shadow:0 5px var(--greenD);
+  box-shadow:0 5px var(--darkred);
   transform: translateY(5px);
 }
 
