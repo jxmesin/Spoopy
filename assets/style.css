@@ -1,5 +1,16 @@
+/* Added color variables. - Magerick */
+:root {
+  --blue: #0028a0;
+  --chrome: #4060a0;
+  --dark: #101520;
+  --cype: #ffd1a4;
+  --cypeD: #c08040;
+  --green: #40C080;
+}
+
 body {
-  background-color:rgba(255, 209, 164);
+  background-color: var(--cypeD);
+  /* background-color:rgba(255, 209, 164); */
   text-align: center;
 }
 
@@ -42,30 +53,53 @@ h1:not(:hover) {
   100% {transform: rotate(0deg);}
 }
 
-/* h1 - Magerick */
+/* h1 
+Added margin-top/bottom to remove the empty 
+space in the center of the screen. - Magerick */
 h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-inline: auto; 
+  margin-top: -20px;
+  margin-bottom: -10px; 
   font-size: 250px;
   animation: wiggle 2.5s infinite;
   font-family: 'Creepster', cursive;
 }
-
-
 
 /* Modal Button - Magerick */
 .modal-button {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: center;  
+/* Added button style and margin-bottom. - Magerick */
   margin-inline: auto;
-  width: 100px;
+  margin-bottom: 10px;
+  width: 200px;
   height: 50px;
+  border-radius: 10px;
+  border: 5px solid var(--dark);
+  background-color: var(--dark);
+  color: var(--green);
+  font-size: 20px;
+  font-family: papyrus;
 }
 
+/* Fetch Data Button. Adding some style. 
+Added padding. - Magerick */
+.fetchdatabutton {
+  border-radius: 10px;
+  border: 5px solid var(--dark);
+  background-color: var(--dark);
+  color: var(--cypeD);
+  font-size: 30px;
+  font-style: oblique;
+  font-weight: bolder;
+  font-family: papyrus;
+  padding: 10px;
+}
 
 /* The Modal (background) */
 .modal {
@@ -86,11 +120,22 @@ h1 {
     background-color: #fefefe;
     margin: 15% auto; /* 15% from the top and centered */
     /* Added margin-top. Changed it to 60px. - Magerick */
-    margin-top: 60px;
-    padding: 20px;
+    margin-top: 8px;
+    padding: 10px;
     border: 1px solid #888;
     /* Changed width to 33% - Magerick */
     width: 33%; /* Could be more or less, depending on screen size */
+    /* Added some font style to Mr. Skelly Bones.
+    Downsized the font. - Magerick */
+    font-family: papyrus;
+    font-size: 30px;
+    font-style: oblique;
+    font-weight: bolder;
+  }
+
+/* Reduced the font size. - Magerick */
+  .description {
+    font-size: 15px;
   }
   
   /* The Close Button */
@@ -108,16 +153,16 @@ h1 {
     cursor: pointer;
   }
 
-
-
 .result {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 5px;
   padding: 10px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 4rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  /* Reduced the font size and added italics. - Magerick */
+  font-size: 30px;
+  font-style: italic;
 }
 
 .result2 {
@@ -126,8 +171,11 @@ h1 {
   align-items: center;
   margin: 5px;
   padding: 10px;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 4rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  font-style: italic;
+} 
+
 }
 
 .result3 {
@@ -139,4 +187,3 @@ h1 {
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-size: 4rem;
 }
-  
