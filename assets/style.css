@@ -98,6 +98,13 @@ h1 {
   font-family: 'Creepster', cursive;
 }
 
+/* Added the Pumpkin Ghost styles. 
+Source: Me lmao. - Magerick */
+.ghost {
+  width: 150px;
+  height: 200px;
+}
+
 /* Modal Button - Magerick */
 .modal-button {
   display: flex;
