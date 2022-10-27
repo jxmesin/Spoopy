@@ -117,7 +117,10 @@ const getData3 = function() {
     }
   };
   
-  fetch('https://http-cors-proxy.p.rapidapi.com/https://generatorfun.com/consumeapi.php?api=39&apisecret=978c05-79094e-b07c06-d75f84-57ad6e', options)
+
+  
+  fetch('https://http-cors-proxy.p.rapidapi.com/https://generatorfun.com/consumeapi.php?api=16&apisecret=9643d9-9ccd5e-367577-5c01ee-af4a3c', options)
+
     .then(response => response.json())
     .then(response => {
       console.log(response)
@@ -125,9 +128,18 @@ const getData3 = function() {
     }) 
     .catch(err => console.error(err));
     
+
     
 }
 fetchDataBtn.addEventListener('click', getData3)
+
+
+
+
+
+// add event listener for #fetch data button
+fetchDataBtn.addEventListener('click', getData3)
+
 
 
 // add event listener for #fetch data button
