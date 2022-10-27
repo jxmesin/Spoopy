@@ -47,8 +47,9 @@ var repoList = document.querySelector('ul');
 var fetchButton = document.getElementById('fetch-button');
 var requestUrl = 'https://generatorfun.com/consumeapi.php?api=39&apisecret=978c05-79094e-b07c06-d75f84-57ad6e'
 var requestUrltwo = 'https://generatorfun.com/consumeapi.php?api=2325&apisecret=944d63-8986a4-ed361f-a7c6a4-bf1f03'
+var requestUrlThree = 'https://generatorfun.com/consumeapi.php?api=16&apisecret=9643d9-9ccd5e-367577-5c01ee-af4a3c'
 const fetchDataBtn = document.querySelector('#fetchdata')
-const result = document.querySelector('#result')
+const resuzlt = document.querySelector('#result')
 
 // gets data from API and sets the content of #result div
 const getData = function() {
@@ -96,8 +97,11 @@ const getData2 = function() {
 
 
 
+
 // add event listener for #fetchdata button
 fetchDataBtn.addEventListener('click', getData2)
 
  
-
+sessionStorage.setItem("mySessionStore", JSON.stringify(result));
+const mySessionData = JSON.parse(sessionStorage.getItem("mySessionStore"));
+console.log(mySessionData);
