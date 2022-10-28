@@ -66,6 +66,54 @@ h1 {
   font-family: 'Creepster', cursive;
 }
 
+/* h2
+This is for the header that goes above costume results */
+h2 {
+  display: flex
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-inline: auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: var(--darkred);
+  font-size: 60px;
+  letter-spacing: 10px;
+  font-family: 'Creepster', cursive;
+  text-decoration: underline;
+}
+
+/* h3
+This is for the header that goes above joke result */
+h3 {
+  display: flex
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-inline: auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: var(--darkred);
+  font-size: 60px;
+  letter-spacing: 10px;
+  font-family: 'Creepster', cursive;
+  text-decoration: underline;
+}
+
+/* 
+This is for the header that goes above the pickup line result */
+h4 {
+  display: flex
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-inline: auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: var(--darkred);
+  font-size: 60px;
+  letter-spacing: 10px;
+  font-family: 'Creepster', cursive;
+  text-decoration: underline;
+}
+
 /* Modal Button - Magerick */
 .modal-button {
   display: flex;
@@ -87,11 +135,8 @@ Deleted margin-bottom/tweaked margin-top. - Magerick */
   /* Added a transition duration for the hover. 
   Added a box-shadow and cursor pointer. - Magerick */
   transition-duration: 0.5s;
-<<<<<<< HEAD
   box-shadow: 0 10px var(--cypeD);
-=======
   box-shadow: 0 8px var(--cypeD);
->>>>>>> fd13a8fc2487eb3e3f2a5ca6ef560ba30ef01c15
   cursor: pointer;
 }
 
@@ -128,11 +173,8 @@ Added padding. - Magerick */
 .fetchdatabutton:hover {
   color: var(--cypeD);
   background-color: var(--dark);
-<<<<<<< HEAD
   box-shadow:0 5px var(--cypeD);
-=======
   box-shadow:0 5px var(--darkred);
->>>>>>> fd13a8fc2487eb3e3f2a5ca6ef560ba30ef01c15
   transform: translateY(5px);
 }
 
