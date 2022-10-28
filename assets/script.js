@@ -32,7 +32,7 @@ const options = {
 	headers: {
 		origin: 'example.com',
 		'x-requested-with': 'example.com',
-		'X-RapidAPI-Key': '7a045ebe84mshf1fbfc93a63591fp1b38b4jsnf62ad6f91c8e',
+		'X-RapidAPI-Key': '8910f76717msh2d443801d64c947p1bd4e3jsn114f87695c5c',
 		'X-RapidAPI-Host': 'http-cors-proxy.p.rapidapi.com'
 	}
 };
@@ -52,14 +52,14 @@ const result = document.querySelector('#result')
 
 
 // gets data from API and sets the content of #result div
-const getData = function() {
+ const getData = function() {
   result.innerText = 'Loading....'
   const options = {
     method: 'GET',
     headers: {
       origin: 'example.com',
       'x-requested-with': 'example.com',
-      'X-RapidAPI-Key': '7a045ebe84mshf1fbfc93a63591fp1b38b4jsnf62ad6f91c8e',
+      'X-RapidAPI-Key': '8910f76717msh2d443801d64c947p1bd4e3jsn114f87695c5c',
       'X-RapidAPI-Host': 'http-cors-proxy.p.rapidapi.com'
     }
   };
@@ -71,7 +71,7 @@ const getData = function() {
       result.innerText = response
     }) 
     .catch(err => console.error(err));
-}
+} 
 
 
 
@@ -87,7 +87,7 @@ const getData2 = function() {
     headers: {
       origin: 'example.com',
       'x-requested-with': 'example.com',
-      'X-RapidAPI-Key': '7a045ebe84mshf1fbfc93a63591fp1b38b4jsnf62ad6f91c8e',
+      'X-RapidAPI-Key': '8910f76717msh2d443801d64c947p1bd4e3jsn114f87695c5c',
       'X-RapidAPI-Host': 'http-cors-proxy.p.rapidapi.com'
     }
   };
@@ -112,7 +112,7 @@ const getData3 = function() {
     headers: {
       origin: 'example.com',
       'x-requested-with': 'example.com',
-      'X-RapidAPI-Key': '7a045ebe84mshf1fbfc93a63591fp1b38b4jsnf62ad6f91c8e',
+      'X-RapidAPI-Key': '8910f76717msh2d443801d64c947p1bd4e3jsn114f87695c5c',
       'X-RapidAPI-Host': 'http-cors-proxy.p.rapidapi.com'
     }
   };
@@ -149,7 +149,7 @@ const options = {
   headers: {
     origin: 'example.com',
     'x-requested-with': 'example.com',
-    'X-RapidAPI-Key': '7a045ebe84mshf1fbfc93a63591fp1b38b4jsnf62ad6f91c8e',
+    'X-RapidAPI-Key': '8910f76717msh2d443801d64c947p1bd4e3jsn114f87695c5c',
     'X-RapidAPI-Host': 'http-cors-proxy.p.rapidapi.com'
   }
 };
@@ -159,3 +159,5 @@ fetch('https://http-cors-proxy.p.rapidapi.com/https://generatorfun.com/consumeap
             localStorage.setItem('myResponse', JSON.stringify(json));
         })
       };
+
+    
