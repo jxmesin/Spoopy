@@ -1,12 +1,18 @@
 # Spoopy_App
-Spoopy is an interactive costume generator with an event finder for the people who have no idea what to be and what to do!
+
+## Description
+Spoopy is an application that generates costume ideas, jokes, and pickup-lines for the fancy folks out there. With a simple click, the webpage randomly generates ideas on how to spend your Halloween night.
+
+## Installation
+N/A
+
+## Usage
+Spoopy contains various buttons that serve different purposes.
+
+![alt text](assets/images/screen-1.gif?raw=true)
+![alt text](assets/images/screen-2.gif?raw=true)
+
+When the app sets up the costume, joke, and line, 
+![alt text](assets/images/screen-3.gif?raw=true)
 
 Check it out here!---> https://jxmesin.github.io/Spoopy_App/
-
-## Why make a Halloween costume and event generator app using third party API's? 
-
-Do you still not have a costume? Halloween is right around the corner?! 
-
-Have you heard of the Spoopy app?! It generates awesome Halloween costume ideas as well as unique and fun local event venues!
-
-This web app will function as a useful tool for anyone confused about what to be for Halloween or what events they could attend. Having this issue almost every year, many Americans all over the nation struggle with finding a good costume and a suitable venue they can enjoy. With this simple yet effective tool, users can sleep soundly knowing they have this nifty app to help them get the creative spark they need to have a great Halloween!

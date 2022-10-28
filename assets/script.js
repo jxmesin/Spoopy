@@ -73,6 +73,8 @@ const getData = function() {
     .then(response => response.json())
     .then(response => {
       console.log(response)
+      const saveDress = JSON.stringify(response)
+      localStorage.setItem("saveDress", saveDress)
       result.innerText = response
     }) 
     .catch(err => console.error(err));
@@ -103,6 +105,8 @@ const getData2 = function() {
     .then(response => response.json())
     .then(response => {
       console.log(response)
+      const saveJoke = JSON.stringify(response)
+      localStorage.setItem("saveJoke", saveJoke)
       result2.innerText = response
     }) 
     .catch(err => console.error(err));
@@ -113,7 +117,7 @@ fetchDataBtn.addEventListener('click', getData2)
 
 
 const getData3 = function() {
-  result.innerText = 'Loading....'
+  result.innerText = 'Loading. . .'
   const options = {
     method: 'GET',
     url: 'https://http-cors-proxy.p.rapidapi.com/https://jsonplaceholder.typicode.com/posts/1',
@@ -133,6 +137,9 @@ const getData3 = function() {
     .then(response => response.json())
     .then(response => {
       console.log(response)
+      // Save response to local storage.
+      const saveDate = JSON.stringify(response)
+      localStorage.setItem("saveDate", saveDate)
       result3.innerText = response
     }) 
     .catch(err => console.error(err));
@@ -171,4 +178,14 @@ fetch('https://http-cors-proxy.p.rapidapi.com/https://generatorfun.com/consumeap
         })
       };
 
-      
+const save1 = localStorage.getItem("saveDress")
+const save1Parse = JSON.parse(save1)
+result1.innerHTML = save1Parse
+
+const save2 = localStorage.getItem("saveJoke")
+const save2Parse = JSON.parse(save2)
+result2.innerHTML = save2Parse
+
+const save3 = localStorage.getItem("saveDate")
+const save3Parse = JSON.parse(save3)
+result3.innerHTML = save3Parse
