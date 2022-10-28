@@ -12,7 +12,7 @@ Spoopy contains various buttons that serve different purposes.
 ![alt text](assets/images/screen-1.gif?raw=true)
 ![alt text](assets/images/screen-2.gif?raw=true)
 
-When the app sets up the costume, joke, and line, 
+When the app sets up the costume, joke, and line, the
 ![alt text](assets/images/screen-3.gif?raw=true)
 
 Check it out here!---> https://jxmesin.github.io/Spoopy_App/
