@@ -27,17 +27,20 @@ document.body.appendChild(a);
 a.click();
  
 */
+
 const options = {
-	method: 'GET',
-	headers: {
-		origin: 'example.com',
-		'x-requested-with': 'example.com',
-		'X-RapidAPI-Key': '7a045ebe84mshf1fbfc93a63591fp1b38b4jsnf62ad6f91c8e',
-		'X-RapidAPI-Host': 'http-cors-proxy.p.rapidapi.com'
-	}
+  method: 'GET',
+  url: 'https://http-cors-proxy.p.rapidapi.com/https://jsonplaceholder.typicode.com/posts/1',
+  headers: {
+    origin: 'example.com',
+    'x-requested-with': 'example.com',
+    'X-RapidAPI-Key': '0d8416f193msh56444f997718e79p1dd0e7jsn9fb1f5e138bd',
+    'X-RapidAPI-Host': 'http-cors-proxy.p.rapidapi.com'
+  }
 };
 
-fetch('https://http-cors-proxy.p.rapidapi.com/https://jsonplaceholder.typicode.com/posts/1', options)
+
+fetch('https://http-cors-proxy.p.rapidapi.com', options)
 	.then(response => response.json())
 	.then(response => console.log(response))
 	.catch(err => console.error(err));
@@ -56,13 +59,15 @@ const getData = function() {
   result.innerText = 'Loading....'
   const options = {
     method: 'GET',
+    url: 'https://http-cors-proxy.p.rapidapi.com/https://jsonplaceholder.typicode.com/posts/1',
     headers: {
       origin: 'example.com',
       'x-requested-with': 'example.com',
-      'X-RapidAPI-Key': '7a045ebe84mshf1fbfc93a63591fp1b38b4jsnf62ad6f91c8e',
+      'X-RapidAPI-Key': '0d8416f193msh56444f997718e79p1dd0e7jsn9fb1f5e138bd',
       'X-RapidAPI-Host': 'http-cors-proxy.p.rapidapi.com'
     }
   };
+
   
   fetch('https://http-cors-proxy.p.rapidapi.com/https://generatorfun.com/consumeapi.php?api=39&apisecret=978c05-79094e-b07c06-d75f84-57ad6e', options)
     .then(response => response.json())
@@ -84,13 +89,15 @@ const getData2 = function() {
   result.innerText = 'Loading....'
   const options = {
     method: 'GET',
+    url: 'https://http-cors-proxy.p.rapidapi.com/https://jsonplaceholder.typicode.com/posts/1',
     headers: {
       origin: 'example.com',
       'x-requested-with': 'example.com',
-      'X-RapidAPI-Key': '7a045ebe84mshf1fbfc93a63591fp1b38b4jsnf62ad6f91c8e',
+      'X-RapidAPI-Key': '0d8416f193msh56444f997718e79p1dd0e7jsn9fb1f5e138bd',
       'X-RapidAPI-Host': 'http-cors-proxy.p.rapidapi.com'
     }
   };
+
   
   fetch('https://http-cors-proxy.p.rapidapi.com/https://generatorfun.com/consumeapi.php?api=2325&apisecret=944d63-8986a4-ed361f-a7c6a4-bf1f03', options)
     .then(response => response.json())
@@ -109,13 +116,15 @@ const getData3 = function() {
   result.innerText = 'Loading....'
   const options = {
     method: 'GET',
+    url: 'https://http-cors-proxy.p.rapidapi.com/https://jsonplaceholder.typicode.com/posts/1',
     headers: {
       origin: 'example.com',
       'x-requested-with': 'example.com',
-      'X-RapidAPI-Key': '7a045ebe84mshf1fbfc93a63591fp1b38b4jsnf62ad6f91c8e',
+      'X-RapidAPI-Key': '0d8416f193msh56444f997718e79p1dd0e7jsn9fb1f5e138bd',
       'X-RapidAPI-Host': 'http-cors-proxy.p.rapidapi.com'
     }
   };
+
   
 
   
@@ -142,20 +151,24 @@ fetchDataBtn.addEventListener('click', getData3)
 
 
 
-// add event listener for #fetch data button
+//local storage result of api
 const localStorage1 = function(){
-const options = {
-  method: 'GET',
-  headers: {
-    origin: 'example.com',
-    'x-requested-with': 'example.com',
-    'X-RapidAPI-Key': '7a045ebe84mshf1fbfc93a63591fp1b38b4jsnf62ad6f91c8e',
-    'X-RapidAPI-Host': 'http-cors-proxy.p.rapidapi.com'
-  }
-};
+  const options = {
+    method: 'GET',
+    url: 'https://http-cors-proxy.p.rapidapi.com/https://jsonplaceholder.typicode.com/posts/1',
+    headers: {
+      origin: 'example.com',
+      'x-requested-with': 'example.com',
+      'X-RapidAPI-Key': '0d8416f193msh56444f997718e79p1dd0e7jsn9fb1f5e138bd',
+      'X-RapidAPI-Host': 'http-cors-proxy.p.rapidapi.com'
+    }
+  };
+console.log('https://http-cors-proxy.p.rapidapi.com/https://generatorfun.com/consumeapi.php?api=39&apisecret=978c05-79094e-b07c06-d75f84-57ad6e' + respone)
 fetch('https://http-cors-proxy.p.rapidapi.com/https://generatorfun.com/consumeapi.php?api=39&apisecret=978c05-79094e-b07c06-d75f84-57ad6e' + result.innerText)
         .then( response => response.json() )
         .then( json => {
             localStorage.setItem('myResponse', JSON.stringify(json));
         })
       };
+
+      
