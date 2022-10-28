@@ -84,16 +84,18 @@ body {
 /* h1 
 Added margin-top/bottom to remove the empty 
 space in the center of the screen. 
-Tweaked margin-top/bottom. - Magerick */
+Tweaked margin-top/bottom. 
+Added margin-left; tweaked top/bottom/font size. - Magerick */
 h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-inline: auto; 
-  margin-top: 30px;
-  margin-bottom: 40px; 
+  margin-top: 60px;
+  margin-bottom: 60px;
+  margin-left: 160px; 
   color: var(--redD);
-  font-size: 250px;
+  font-size: 200px;
   letter-spacing: 20px;
   font-family: 'Creepster', cursive;
 }
@@ -114,7 +116,8 @@ Source: Me lmao. - Magerick */
 /* Added button style and margin-bottom.
 Deleted margin-bottom/tweaked margin-top. - Magerick */
   margin-inline: auto;
-  margin-top: 30px;
+  margin-top: 40px;
+  margin-bottom: -10px;
   width: 200px;
   height: 50px;
   border-radius: 5px;
