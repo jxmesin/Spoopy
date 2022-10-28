@@ -12,7 +12,6 @@
   --darkred: #580000;
   --darkgrey: #3A3A3A;
   --darkestgrey: #1F1F1F;
-
 }
 
 body {
@@ -52,14 +51,15 @@ body {
 
 /* h1 
 Added margin-top/bottom to remove the empty 
-space in the center of the screen. - Magerick */
+space in the center of the screen. 
+Tweaked margin-top/bottom. - Magerick */
 h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-inline: auto; 
-  margin-top: 60px;
-  margin-bottom: 50px; 
+  margin-top: 30px;
+  margin-bottom: 40px; 
   color: var(--darkred);
   font-size: 250px;
   letter-spacing: 20px;
@@ -72,10 +72,10 @@ h1 {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;  
-/* Added button style and margin-bottom. - Magerick */
+/* Added button style and margin-bottom.
+Deleted margin-bottom/tweaked margin-top. - Magerick */
   margin-inline: auto;
-  margin-top: 90px;
-  margin-bottom: 10px;
+  margin-top: 30px;
   width: 200px;
   height: 50px;
   border-radius: 5px;
@@ -166,6 +166,11 @@ Added padding. - Magerick */
     font-size: 30px;
     font-style: oblique;
     font-weight: bolder;
+    /* Added modal background styles. - Magerick */
+    background-color: var(--dark);
+    border-radius: 10px;
+    color: var(--chrome);
+    text-shadow: 1px 1px var(--blue);
   }
 
 /* Reduced the font size. - Magerick */
