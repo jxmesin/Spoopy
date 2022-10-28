@@ -17,6 +17,27 @@ window.onclick = function(event) {
   }
 }
 
+
+var modal1 = document.getElementById("modal-content1");
+var cbtn = document.getElementById("cbtn");
+var span1 = document.getElementsByClassName("close1")[0];
+
+cbtn.onclick = function() {
+  modal1.style.display = "block";
+  modal.style.display = "none";
+}
+
+span1.onclick = function() {
+  modal1.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal1) {
+    modal1.style.display = "none";
+  }
+}
+
 /*idea on how to make to save the api output
  
 var file = window.URL.createObjectURL(result);
