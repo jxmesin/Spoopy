@@ -6,6 +6,8 @@
   --redD: #a01010;
   --cype: #c08040;
   --cypeD: #a02010;
+  --greenD: #10a010;
+  --jade: #40c080;
   --zure: #4080c0;
   --zureD: #1020a0;
   --blue: #4040a0;
@@ -110,13 +112,16 @@ Deleted margin-bottom/tweaked margin-top. - Magerick */
   transform: translateY(5px);
 }
 
-/* Added */
+/* Added a savelist and list. - Magerick*/
 .savelist {
-  display: flex;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .list {
-  margin-right: 300px;
+  margin-right: 500px;
 }
 
 /* Fetch Data Button. Adding some style. 
@@ -166,10 +171,11 @@ Added padding. - Magerick */
   margin-bottom: 20px;
 }
 
+/* Added jade as a color. - Magerick*/
 .save:hover {
-  color: var(--cypeD);
+  color: var(--jade);
   background-color: var(--dark);
-  box-shadow:0 5px var(--redD);
+  box-shadow:0 5px var(--greenD);
   transform: translateY(5px);
 }
 
