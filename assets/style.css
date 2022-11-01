@@ -110,6 +110,15 @@ Deleted margin-bottom/tweaked margin-top. - Magerick */
   transform: translateY(5px);
 }
 
+/* Added */
+.savelist {
+  display: flex;
+}
+
+.list {
+  margin-right: 300px;
+}
+
 /* Fetch Data Button. Adding some style. 
 Added padding. - Magerick */
 .fetchdatabutton {
@@ -138,28 +147,6 @@ Added padding. - Magerick */
   box-shadow:0 5px var(--redD);
   transform: translateY(5px);
 }
-
-.save-button {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;  
-  margin-inline: auto;
-  margin-top: 40px;
-  margin-bottom: -10px;
-  width: 200px;
-  height: 50px;
-  border-radius: 5px;
-  border: 5px solid var(--dark);
-  background-color: var(--dark);
-  color: var(--cype);
-  font-size: 20px;
-  font-family: papyrus;
-  transition-duration: 0.5s;
-  box-shadow: 0 8px var(--cypeD);
-  cursor: pointer;
-}
-
 
 /* Added .dance to make the skeleton dance gif inline with the page. - Magerick 
 Source:
