@@ -108,7 +108,7 @@ Deleted margin-bottom/tweaked margin-top. - Magerick */
 .modal-button:hover {
   color: var(--cypeD);
   background-color: var(--dark);
-  box-shadow:0 5px var(--redD);
+  box-shadow: 0 5px var(--redD);
   transform: translateY(5px);
 }
 
@@ -118,10 +118,19 @@ Deleted margin-bottom/tweaked margin-top. - Magerick */
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  color: var(--zure);
+  font-size: 30px;
+  font-style: oblique;
+  font-weight: bolder;
+  font-family: papyrus;
 }
 
 .list {
-  margin-right: 500px;
+  margin-right: 50px;
+  border: 10px solid var(--dark);
+  border-radius: 10px;
+  background-color: var(--dark);
+  box-shadow: 0 10px var(--zureD);
 }
 
 /* Fetch Data Button. Adding some style. 
