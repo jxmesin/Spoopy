@@ -163,6 +163,7 @@ result3.innerHTML = save3Parse
 
 ////////////////
 // allData has nested arrays // 2d array //for each loop
+var idList = document.getElementById("savedatabutton");
 var allData = [];
 
 function save(){
@@ -172,20 +173,20 @@ function save(){
   
   var fieldValue = document.getElementById("result").innerText;
   result.push(fieldValue)
-  var fieldValue = document.getElementById("result2").innerText;
-  result.push(fieldValue)
-  var fieldValue = document.getElementById("result3").innerText;
-  result.push(fieldValue)
+  var fieldValue2 = document.getElementById("result2").innerText;
+  result.push(fieldValue2)
+  var fieldValue3 = document.getElementById("result3").innerText;
+  result.push(fieldValue3)
   
   allData.push(result);
 
   //allData.forEach (element => document.getElementById("savelist").innerHTML=element)
   for (i = 0; i<allData.length; i++){
     for (j = 0; j<3; j++){
-      document.getElementById("savelist").innerHTML=allData[i][j];
+      document.getElementById("list").innerHTML=allData[i][j];
     }
   }
   console.log(allData)
 }
 
-
+idList.addEventListener('click', save)
