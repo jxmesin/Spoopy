@@ -31,12 +31,12 @@ CSS Lead: James Inanoria
 CSS Guide: Kaitlyn [Something]
 HTML Guide: Paul York
 
-# Donators ($4 each)
+## Donators ($4 each)
 Costume API: Dominic Paulazzo
 Joke API: Troy Miller
 Pick Up Line API: Dan Magerick Ponce
 
-## Sources:
+## Sources
 Costume API:
 Joke API:
 Pick Up Line API:
