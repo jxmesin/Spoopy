@@ -6,6 +6,8 @@
   --redD: #a01010;
   --cype: #c08040;
   --cypeD: #a02010;
+  --greenD: #10a010;
+  --jade: #40c080;
   --zure: #4080c0;
   --zureD: #1020a0;
   --blue: #4040a0;
@@ -108,17 +110,29 @@ Deleted margin-bottom/tweaked margin-top. - Magerick */
 .modal-button:hover {
   color: var(--cypeD);
   background-color: var(--dark);
-  box-shadow:0 5px var(--redD);
+  box-shadow: 0 5px var(--redD);
   transform: translateY(5px);
 }
 
-/* Added */
+/* Added a savelist and list. - Magerick*/
 .savelist {
-  display: flex;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-style: oblique;
+  font-weight: bolder;
+  font-family: papyrus;
 }
 
 .list {
-  margin-right: 300px;
+  margin-right: 50px;
+  border-radius: 10px;
+  border: 10px solid var(--dark);
+  color: var(--zure);
+  background-color: var(--dark);
+  box-shadow: 0 10px var(--zureD);
 }
 
 /* Fetch Data Button. Adding some style. 
@@ -148,6 +162,45 @@ Added padding. - Magerick */
   background-color: var(--dark);
   box-shadow:0 5px var(--redD);
   transform: translateY(5px);
+}
+
+/* Added .save and its hover attributes. - Magerick */
+.save {
+  margin-left: 50px;
+  border-radius: 10px;
+  border: 5px solid var(--dark);
+  background-color: var(--dark);
+  color: var(--cype);
+  font-size: 30px;
+  font-style: oblique;
+  font-weight: bolder;
+  font-family: papyrus;
+  padding: 10px;
+  transition-duration: 0.5s;
+  box-shadow: 0 8px var(--cypeD);
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+/* Added jade as a color. - Magerick*/
+.save:hover {
+  color: var(--jade);
+  background-color: var(--dark);
+  box-shadow:0 5px var(--greenD);
+  transform: translateY(5px);
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(360deg);
+  }
 }
 
 /* Added .dance to make the skeleton dance gif inline with the page. - Magerick 
