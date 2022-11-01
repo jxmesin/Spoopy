@@ -46,7 +46,9 @@ body {
     0 0 80px var(--redD);
  }
 }
-
+.savelist {
+  color: white;
+}
 .header {
   animation: pulsate 2.0s infinite alternate;
 }

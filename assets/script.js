@@ -181,9 +181,12 @@ function save(){
   allData.push(result);
 
   //allData.forEach (element => document.getElementById("savelist").innerHTML=element)
+  document.getElementById("list").innerHTML=""
   for (i = 0; i<allData.length; i++){
     for (j = 0; j<3; j++){
-      document.getElementById("list").innerHTML=allData[i][j];
+     var newElement =  document.createElement("li")
+      newElement.textContent = allData[i][j]
+      document.getElementById("list").appendChild(newElement)
     }
   }
   console.log(allData)
