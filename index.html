@@ -11,40 +11,41 @@
 </head> 
 
 <body>
-    <button id="modal-button" class="modal-button">What is Spoopy?</button>
     <h1 class="header">SPOOPY<img class="ghost" src="./assets/images/pumpkinghost.gif" alt="Spoopify!"></h1>
     
-    <button class="fetchdatabutton" id="fetchdata">MAKE ME SPOOPY!</button>
+    <container>
+        <button id="modal-button" class="modal-button">What is Spoopy?</button>
+        <button class="fetchdatabutton" id="fetchdata">MAKE ME SPOOPY!</button>
+        <button onclick="save()" id="save-button" class="save-button">Save</button>
+    </container>
 
     <results>
         <div class="result" id="result">Dress up or mess up!</div>
         <div class="result2" id="result2">Wanna hear a joke?</div>
         <div class="result3" id="result3">Ya like jazz? ;)</div>
-    </results> 
-
-    <button onclick="save()" id="save-button" class="save-button">Save Idea</button>
-    <br>
-    <div class="savelist" id="savelist">
-        <ul class="list" id="list">
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </div>
+    </results>
+    
+    <savelist class="savelist" id="savelist">
+        <div class="list" id="list">
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
+    </savelist>
 
     <section>
         <img class="dance" src="./assets/images/halloweendance.gif">
     </section>
 
     <!-- The Modal -->
-    <div id="modal-content" class="modal">
+    <modal id="modal-content" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
             <p>Mr. Skelly Bones!</p>
-            <p class="description">But this is actually a costume generator with a pinch of fun. Click on the button for a crazy costume idea, halloween joke, and pick-up line!</p>
+            <p class="description">A costume generator with a pinch of fun.</p>
             <img id="bones" src="./assets/images/mrskellybones.gif" alt="A skeleton bouncing on a barrel lmao.">
         </div>
-    </div>
+    </modal>
     <script src="assets/script.js"></script>
 </body>
 </html>

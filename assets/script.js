@@ -1,3 +1,5 @@
+document.getElementById("savelist").style.display = "none";
+
 // modal content
 var modal = document.getElementById("modal-content");
 var btn = document.getElementById("modal-button");
@@ -179,10 +181,12 @@ function save(){
   allData.push(result);
 
   //allData.forEach (element => document.getElementById("savelist").innerHTML=element)
+  document.getElementById("savelist").style.display= "block";
+  savelist.setAttribute("style", "display: inline-flex; flex-wrap: wrap; justify-content: center; align-items: center; font-size: 15px; font-style: oblique; font-weight: bolder; font-family: papyrus");
   document.getElementById("list").innerHTML=""
   for (i = 0; i<allData.length; i++){
     for (j = 0; j<3; j++){
-     var newElement = document.createElement("li")
+     var newElement = document.createElement("p")
       newElement.textContent = allData[i][j]
       document.getElementById("list").appendChild(newElement)
     }
