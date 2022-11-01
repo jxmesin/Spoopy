@@ -34,7 +34,7 @@ CSS Lead: James Inanoria
 <br>
 CSS Guide: Kaitlyn [Something]
 <br>
-HTML Guide: Paul York
+HTML Lead: Paul York
 
 ## Donators ($4 each)
 Costume API: Dominic Paulazzo
