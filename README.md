@@ -25,23 +25,37 @@ Easter Egg below:
 
 ## Credits
 Project Lead: Dan Magerick Ponce
+<br>
 Concept Lead: Dominic Paulazzo
+<br>
 J-Script Lead: Troy Miller
+<br>
 CSS Lead: James Inanoria
+<br>
 CSS Guide: Kaitlyn [Something]
+<br>
 HTML Guide: Paul York
 
 ## Donators ($4 each)
 Costume API: Dominic Paulazzo
+<br>
 Joke API: Troy Miller
+<br>
 Pick Up Line API: Dan Magerick Ponce
+<br>
 
 ## Sources
 Costume API:
+<br>
 Joke API:
+<br>
 Pick Up Line API:
+<br>
 
 ## Assets
 pumpkinghost.gif: Dan Magerick Ponce
-mrskellybones.gif: 
-halloweendance.gif: 
+<br>
+mrskellybones.gif:
+<br>
+halloweendance.gif:
+<br>
