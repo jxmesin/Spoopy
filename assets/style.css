@@ -51,38 +51,7 @@ body {
   animation: pulsate 2.0s infinite alternate;
 }
 
-/* Added button effects for header. - Magerick */
-/* .header:active {
-  transform: scale(1, 1);
-  transition: transform 0.2s color 0.2s;
-  @keyframes pulsate {
-    100% {
-      text-shadow:
-      0 0 4px var(--zure),
-      0 0 11px var(--zure),
-      0 0 19px var(--zure),
-      0 0 40px var(--blueD),
-      0 0 80px var(--blueD),
-      0 0 90px var(--blueD),
-      0 0 100px var(--blueD),
-      0 0 150px var(--blueD);
-    }
-    0% {
-    text-shadow:
-      0 0 2px var(--cypeD),
-      0 0 4px var(--cypeD),
-      0 0 6px var(--cypeD),
-      0 0 10px var(--blueD),
-      0 0 45px var(--blueD),
-      0 0 55px var(--blueD),
-      0 0 70px var(--blueD),
-      0 0 80px var(--blueD);
-    }
-  }
-} */
-
-/* h1 
-Added margin-top/bottom to remove the empty 
+/* Added margin-top/bottom to remove the empty 
 space in the center of the screen. 
 Tweaked margin-top/bottom. 
 Added margin-left; tweaked top/bottom/font size. - Magerick */
@@ -170,6 +139,18 @@ Added padding. - Magerick */
   transform: translateY(5px);
 }
 
+/* Added .dance to make the skeleton dance gif inline with the page. - Magerick 
+Source:
+https://giphy.com/gifs/dance-halloween-twerk-3ohhwfAa9rbXaZe86c?utm_source=iframe&utm_medium=embed&utm_campaign=Embeds&utm_term=https%3A%2F%2Fqueens.safeandreliable.care%2F */
+.dance {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  padding: 10px;
+}
+
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
@@ -209,7 +190,7 @@ Added padding. - Magerick */
 
 /* Reduced the font size. - Magerick */
   .description {
-    font-size: 15px;
+    font-size: 20px;
   }
   
   /* The Close Button */
