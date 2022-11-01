@@ -135,6 +135,27 @@ Deleted margin-bottom/tweaked margin-top. - Magerick */
   box-shadow: 0 10px var(--zureD);
 }
 
+.save-button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;  
+  margin-inline: auto;
+  margin-top: 40px;
+  margin-bottom: -10px;
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  border: 5px solid var(--dark);
+  background-color: var(--dark);
+  color: var(--cype);
+  font-size: 20px;
+  font-family: papyrus;
+  transition-duration: 0.5s;
+  box-shadow: 0 8px var(--cypeD);
+  cursor: pointer;
+}
+
 /* Fetch Data Button. Adding some style. 
 Added padding. - Magerick */
 .fetchdatabutton {
