@@ -41,7 +41,6 @@ const options = {
   }
 };
 
-
 fetch('https://http-cors-proxy.p.rapidapi.com', options)
 	.then(response => response.json())
 	.then(response => console.log(response))
@@ -71,7 +70,6 @@ const getData = function() {
     }
   };
 
-  
   fetch('https://http-cors-proxy.p.rapidapi.com/https://generatorfun.com/consumeapi.php?api=39&apisecret=978c05-79094e-b07c06-d75f84-57ad6e', options)
     .then(response => response.json())
     .then(response => {
@@ -83,12 +81,8 @@ const getData = function() {
     .catch(err => console.error(err));
 }
 
-
-
 // add event listener for #fetchdata button
 fetchDataBtn.addEventListener('click', getData)
-
-
 
 const getData2 = function() {
   result.innerText = 'Loading. . .'
@@ -102,7 +96,6 @@ const getData2 = function() {
     }
   };
 
-  
   fetch('https://http-cors-proxy.p.rapidapi.com/https://generatorfun.com/consumeapi.php?api=2325&apisecret=944d63-8986a4-ed361f-a7c6a4-bf1f03', options)
     .then(response => response.json())
     .then(response => {
@@ -116,7 +109,6 @@ const getData2 = function() {
 
 fetchDataBtn.addEventListener('click', getData2)
 
-
 const getData3 = function() {
   result.innerText = 'Loading. . .'
   const options = {
@@ -129,7 +121,6 @@ const getData3 = function() {
     }
   };
 
-  
   fetch('https://http-cors-proxy.p.rapidapi.com/https://generatorfun.com/consumeapi.php?api=16&apisecret=9643d9-9ccd5e-367577-5c01ee-af4a3c', options)
 
     .then(response => response.json())
@@ -158,9 +149,6 @@ fetchDataBtn.addEventListener('click', getData3)
 // const save3Parse = JSON.parse(save3)
 // result3.innerHTML = save3Parse
 
-
-
-
 ////////////////
 // allData has nested arrays // 2d array //for each loop
 var idList = document.getElementById("savedatabutton");
@@ -170,7 +158,6 @@ function save(){
   
   var result = [];
  
-  
   var fieldValue = document.getElementById("result").innerText;
   result.push(fieldValue)
   var fieldValue2 = document.getElementById("result2").innerText;
@@ -195,3 +182,5 @@ function save(){
 }
 
 idList.addEventListener('click', save)
+
+// Cleaned up the indents and spacing. - Magerick

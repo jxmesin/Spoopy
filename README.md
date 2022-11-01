@@ -19,7 +19,7 @@ Spoopy contains various buttons that serve different purposes.
 ![Saves the list of your generated text.](assets/images/screen-3.gif?raw=true)
 
 Easter Egg below:
-![Mr. Skelly Bones.](assets/images/screen-5.gif?raw=true)
+![Mr. Skelly Bones.](assets/images/screen-4.gif?raw=true)
 
 ## Webpage (Update the website!)
 
