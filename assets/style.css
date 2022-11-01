@@ -170,6 +170,15 @@ Added padding. - Magerick */
   transform: translateY(5px);
 }
 
+/* Added .dance to make the skeleton dance gif inline with the page. - Magerick */
+.dance {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+  padding: 10px;
+}
+
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
