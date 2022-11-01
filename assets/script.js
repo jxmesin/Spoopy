@@ -1,4 +1,4 @@
-//all modal content
+// modal content
 var modal = document.getElementById("modal-content");
 var btn = document.getElementById("modal-button");
 var span = document.getElementsByClassName("close")[0];
@@ -109,8 +109,7 @@ const getData2 = function() {
       localStorage.setItem("saveJoke", saveJoke)
       result2.innerText = response
     }) 
-    .catch(err => console.error(err));
-    
+    .catch(err => console.error(err));  
 }
 
 fetchDataBtn.addEventListener('click', getData2)
@@ -141,7 +140,6 @@ const getData3 = function() {
     }) 
     .catch(err => console.error(err));
     
- 
 }
 fetchDataBtn.addEventListener('click', getData3)
 
@@ -184,7 +182,7 @@ function save(){
   document.getElementById("list").innerHTML=""
   for (i = 0; i<allData.length; i++){
     for (j = 0; j<3; j++){
-     var newElement =  document.createElement("li")
+     var newElement = document.createElement("li")
       newElement.textContent = allData[i][j]
       document.getElementById("list").appendChild(newElement)
     }
