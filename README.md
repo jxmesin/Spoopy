@@ -1,7 +1,7 @@
-# Spoopy API
+# Spoopy Party API
 
 ## Description
-Spoopy is an application that generates costume ideas, jokes, and pickup-lines for the fancy folks out there. With a simple click, the webpage randomly generates ideas on how to spend your Halloween night.
+Spoopy is an application that uses multiple APIs to generate costume ideas, jokes, and pickup-lines for the fancy folks out there. With a simple click, the webpage randomly generates ideas on how to spend your Halloween night.
 
 ## Installation
 N/A
@@ -45,17 +45,18 @@ Pick Up Line API: Dan Magerick Ponce
 <br>
 
 ## Sources
-Costume API:
+Cors API (Allows front-end use of APIs): https://http-cors-proxy.p.rapidapi.com/
+Costume API: https://generatorfun.com/consumeapi.php?api=39&apisecret=978c05-79094e-b07c06-d75f84-57ad6e
 <br>
-Joke API:
+Joke API: https://generatorfun.com/consumeapi.php?api=2325&apisecret=944d63-8986a4-ed361f-a7c6a4-bf1f03
 <br>
-Pick Up Line API:
+Pick Up Line API: https://generatorfun.com/consumeapi.php?api=16&apisecret=9643d9-9ccd5e-367577-5c01ee-af4a3c
 <br>
 
 ## Assets
 pumpkinghost.gif: Dan Magerick Ponce
 <br>
-mrskellybones.gif:
+mrskellybones.gif: kiszkiloszki (@tumblr)
 <br>
-halloweendance.gif:
+halloweendance.gif: https://giphy.com/gifs/dance-halloween-twerk-3ohhwfAa9rbXaZe86c?utm_source=iframe&utm_medium=embed&utm_campaign=Embeds&utm_term=https%3A%2F%2Fqueens.safeandreliable.care%2F
 <br>
