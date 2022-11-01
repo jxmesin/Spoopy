@@ -184,7 +184,7 @@ function save(){
   document.getElementById("list").innerHTML=""
   for (i = 0; i<allData.length; i++){
     for (j = 0; j<3; j++){
-     var newElement =  document.createElement("li")
+     var newElement =  document.createElement("p")
       newElement.textContent = allData[i][j]
       document.getElementById("list").appendChild(newElement)
     }
