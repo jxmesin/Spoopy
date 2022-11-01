@@ -139,7 +139,9 @@ Added padding. - Magerick */
   transform: translateY(5px);
 }
 
-/* Added .dance to make the skeleton dance gif inline with the page. - Magerick */
+/* Added .dance to make the skeleton dance gif inline with the page. - Magerick 
+Source:
+https://giphy.com/gifs/dance-halloween-twerk-3ohhwfAa9rbXaZe86c?utm_source=iframe&utm_medium=embed&utm_campaign=Embeds&utm_term=https%3A%2F%2Fqueens.safeandreliable.care%2F */
 .dance {
   display: inline-flex;
   flex-direction: column;
@@ -188,7 +190,7 @@ Added padding. - Magerick */
 
 /* Reduced the font size. - Magerick */
   .description {
-    font-size: 15px;
+    font-size: 20px;
   }
   
   /* The Close Button */
