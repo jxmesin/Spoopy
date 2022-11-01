@@ -60,7 +60,7 @@ const result = document.querySelector('#result')
 
 // gets data from API and sets the content of #result div
 const getData = function() {
-  result.innerText = 'Loading....'
+  result.innerText = 'Loading. . .'
   const options = {
     method: 'GET',
     headers: {
@@ -91,7 +91,7 @@ fetchDataBtn.addEventListener('click', getData)
 
 
 const getData2 = function() {
-  result.innerText = 'Loading....'
+  result.innerText = 'Loading. . .'
   const options = {
     method: 'GET',
     headers: {
