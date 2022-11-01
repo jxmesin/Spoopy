@@ -169,14 +169,10 @@ https://giphy.com/gifs/dance-halloween-twerk-3ohhwfAa9rbXaZe86c?utm_source=ifram
   .modal-content {
     background-color: #fefefe;
     margin: 15% auto; /* 15% from the top and centered */
-    /* Added margin-top. Changed it to 60px. - Magerick */
     margin-top: 8px;
     padding: 10px;
     border: 1px solid #888;
-    /* Changed width to 33% - Magerick */
     width: 33%; /* Could be more or less, depending on screen size */
-    /* Added some font style to Mr. Skelly Bones.
-    Downsized the font. - Magerick */
     font-family: papyrus;
     font-size: 30px;
     font-style: oblique;
@@ -188,7 +184,6 @@ https://giphy.com/gifs/dance-halloween-twerk-3ohhwfAa9rbXaZe86c?utm_source=ifram
     text-shadow: 1px 1px var(--blueD);
   }
 
-/* Reduced the font size. - Magerick */
   .description {
     font-size: 20px;
   }
@@ -215,7 +210,6 @@ https://giphy.com/gifs/dance-halloween-twerk-3ohhwfAa9rbXaZe86c?utm_source=ifram
   margin: 5px;
   padding: 10px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  /* Reduced the font size and added italics. - Magerick */
   font-size: 30px;
   font-style: italic;
   color: var(--cype);
@@ -244,4 +238,12 @@ https://giphy.com/gifs/dance-halloween-twerk-3ohhwfAa9rbXaZe86c?utm_source=ifram
   font-size: 20px;
   font-style: italic;
   color: var(--cype);
+}
+
+@media all and (display-mode: fullscreen) {
+  body {
+    size: 100%;
+  
+  }
+
 }
