@@ -16,28 +16,32 @@
     <h1 class="header">SPOOPY<img class="ghost" src="./assets/images/pumpkinghost.gif" alt="Spoopify!"></h1>
     
     <!-- Made a div called savelist. - Magerick -->
-    <savelist>
-        <ol>
+    <div class="savelist" id="savelist">
+        <ol class="list" id="list">
             <li>
+                1. 
             </li>
             <li>
-
+                2.
             </li>
             <li>
-
+                3.
             </li>
         </ol>
-    </savelist>
+        <!-- Moved the button to savelist. - Magerick -->
+        <button class="fetchdatabutton" id="fetchdata">MAKE ME SPOOPY!</button>
+        <!-- Made a save button. -->
+        <button class="save" id="savedatabutton">Save</button>
+    </div>
 
     <results>
-        <button class="fetchdatabutton" id="fetchdata">MAKE ME SPOOPY!</button>
         <button id="save-button" class="modal-button">Save Idea</button>
         <div class="result" id="result">Dress up or mess up!</div>
         <div class="result2" id="result2">Wanna hear a joke?</div>
         <div class="result3" id="result3">Ya like jazz? ;)</div>
     </results>
 
-    <button id="save-button" class="save-button">Save Idea</button>
+    <button onclick="save()" id="save-button" class="save-button">Save Idea</button>
 
     <!-- Changed giphy to an actual gif. - Magerick -->
     <section>
