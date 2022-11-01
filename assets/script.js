@@ -31,21 +31,19 @@ a.click();
 */
 
 const options = {
-  method: 'GET',
-  url: 'https://http-cors-proxy.p.rapidapi.com/https://jsonplaceholder.typicode.com/posts/1',
-  headers: {
-    origin: 'example.com',
-    'x-requested-with': 'example.com',
-    'X-RapidAPI-Key': '0d8416f193msh56444f997718e79p1dd0e7jsn9fb1f5e138bd',
-    'X-RapidAPI-Host': 'http-cors-proxy.p.rapidapi.com'
-  }
+	method: 'GET',
+	headers: {
+		origin: 'example.com',
+		'x-requested-with': 'example.com',
+		'X-RapidAPI-Key': 'f4ca74793cmsh19e56f0c91fbf97p1c6999jsna8245517a0a5',
+		'X-RapidAPI-Host': 'http-cors-proxy.p.rapidapi.com'
+	}
 };
 
-fetch('https://http-cors-proxy.p.rapidapi.com', options)
+fetch('https://http-cors-proxy.p.rapidapi.com/https://jsonplaceholder.typicode.com/posts/1', options)
 	.then(response => response.json())
 	.then(response => console.log(response))
 	.catch(err => console.error(err));
-
 
 
 const firstUrl = "http-cors-proxy.p.rapidapi.com/"
@@ -65,7 +63,7 @@ const getData = function() {
     headers: {
       origin: 'example.com',
       'x-requested-with': 'example.com',
-      'X-RapidAPI-Key': '0d8416f193msh56444f997718e79p1dd0e7jsn9fb1f5e138bd',
+      'X-RapidAPI-Key': 'f4ca74793cmsh19e56f0c91fbf97p1c6999jsna8245517a0a5',
       'X-RapidAPI-Host': 'http-cors-proxy.p.rapidapi.com'
     }
   };
@@ -91,7 +89,7 @@ const getData2 = function() {
     headers: {
       origin: 'example.com',
       'x-requested-with': 'example.com',
-      'X-RapidAPI-Key': '0d8416f193msh56444f997718e79p1dd0e7jsn9fb1f5e138bd',
+      'X-RapidAPI-Key': 'f4ca74793cmsh19e56f0c91fbf97p1c6999jsna8245517a0a5',
       'X-RapidAPI-Host': 'http-cors-proxy.p.rapidapi.com'
     }
   };
@@ -116,7 +114,7 @@ const getData3 = function() {
     headers: {
       origin: 'example.com',
       'x-requested-with': 'example.com',
-      'X-RapidAPI-Key': '0d8416f193msh56444f997718e79p1dd0e7jsn9fb1f5e138bd',
+      'X-RapidAPI-Key': 'f4ca74793cmsh19e56f0c91fbf97p1c6999jsna8245517a0a5',
       'X-RapidAPI-Host': 'http-cors-proxy.p.rapidapi.com'
     }
   };
@@ -181,6 +179,6 @@ function save(){
   console.log(allData)
 }
 
-idList.addEventListener('click', save)
+
 
 // Cleaned up the indents and spacing. - Magerick
