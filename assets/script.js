@@ -145,18 +145,18 @@ const getData3 = function() {
 }
 fetchDataBtn.addEventListener('click', getData3)
 
+// Bucked up with the flavor text, ie. "Dress up or mess up!" - Magerick
+// const save1 = localStorage.getItem("saveDress")
+// const save1Parse = JSON.parse(save1)
+// result.innerHTML = save1Parse
 
-const save1 = localStorage.getItem("saveDress")
-const save1Parse = JSON.parse(save1)
-result.innerHTML = save1Parse
+// const save2 = localStorage.getItem("saveJoke")
+// const save2Parse = JSON.parse(save2)
+// result2.innerHTML = save2Parse
 
-const save2 = localStorage.getItem("saveJoke")
-const save2Parse = JSON.parse(save2)
-result2.innerHTML = save2Parse
-
-const save3 = localStorage.getItem("saveDate")
-const save3Parse = JSON.parse(save3)
-result3.innerHTML = save3Parse
+// const save3 = localStorage.getItem("saveDate")
+// const save3Parse = JSON.parse(save3)
+// result3.innerHTML = save3Parse
 
 
 
