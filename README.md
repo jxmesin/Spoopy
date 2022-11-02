@@ -33,7 +33,7 @@ J-Script Lead: Troy Miller
 <br>
 CSS Lead: James Inanoria
 <br>
-CSS Guide: Kaitlyn [Something]
+CSS Guide: Kaitlyn Heinle
 <br>
 HTML Lead: Paul York
 
