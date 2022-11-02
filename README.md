@@ -1,4 +1,4 @@
-# Spoopy Party API
+# Spoopy Party App
 
 ## Description
 Spoopy is an application that uses multiple APIs to generate costume ideas, jokes, and pickup-lines for the fancy folks out there. With a simple click, the webpage randomly generates ideas on how to spend your Halloween night.
