@@ -43,16 +43,15 @@ Costume API: Troy Miller
 Joke API: Dominic Paulazzo
 <br>
 Pick Up Line API: Dan Magerick Ponce
-<br>
 
 ## Sources
 Cors API (Allows front-end use of APIs): https://http-cors-proxy.p.rapidapi.com/
+<br>
 Costume API: https://generatorfun.com/consumeapi.php?api=39&apisecret=978c05-79094e-b07c06-d75f84-57ad6e
 <br>
 Joke API: https://generatorfun.com/consumeapi.php?api=2325&apisecret=944d63-8986a4-ed361f-a7c6a4-bf1f03
 <br>
 Pick Up Line API: https://generatorfun.com/consumeapi.php?api=16&apisecret=9643d9-9ccd5e-367577-5c01ee-af4a3c
-<br>
 
 ## Assets
 pumpkinghost.gif: Dan Magerick Ponce
