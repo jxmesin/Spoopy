@@ -60,4 +60,3 @@ pumpkinghost.gif: Dan Magerick Ponce
 mrskellybones.gif: kiszkiloszki (@tumblr)
 <br>
 halloweendance.gif: https://giphy.com/gifs/dance-halloween-twerk-3ohhwfAa9rbXaZe86c?utm_source=iframe&utm_medium=embed&utm_campaign=Embeds&utm_term=https%3A%2F%2Fqueens.safeandreliable.care%2F
-<br>
