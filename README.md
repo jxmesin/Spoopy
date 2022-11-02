@@ -22,7 +22,7 @@ Easter Egg below:
 ![Mr. Skelly Bones.](assets/images/screen-4.gif?raw=true)
 
 ## Webpage 
-https://jxmesin.github.io/Spoopy_App/
+https://jxmesin.github.io/Spoopy_Party_App/
 
 ## Credits
 Project Lead: Dan Magerick Ponce
