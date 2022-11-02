@@ -33,14 +33,14 @@ J-Script Lead: Troy Miller
 <br>
 CSS Lead: James Inanoria
 <br>
-CSS Guide: Kaitlyn Heinle
-<br>
 HTML Lead: Paul York
+<br>
+CSS Guide: Kaitlyn Heinle
 
 ## Donators ($4 each)
-Costume API: Dominic Paulazzo
+Costume API: Troy Miller
 <br>
-Joke API: Troy Miller
+Joke API: Dominic Paulazzo
 <br>
 Pick Up Line API: Dan Magerick Ponce
 <br>
